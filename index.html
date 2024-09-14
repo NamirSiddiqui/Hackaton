@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Milestone 4: Editable Resume Builder By Namir Siddiqui</h1>
+    <form id="resumeForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="username">Resume URL:</label> 
+            <input type="text" id="username" name="username" required> <br>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email required">
+            <label for="phone">Phone: </label>
+            <input type="tel" id="phone" name="phone" >
+            <label for="address">Address: </label>
+            <input type="add" id="add" name="add" >
+
+<!--Profile Picture-->
+<label for="profilepicture">Profile Picture</label>
+<input type="file" id="profilepicture" name="profilepicture" accept="image/" required>
+        </fieldset>
+
+<fieldset>
+    <legend>Education</legend>
+    <label for="education">Education</label>
+    <textarea id="educational" name="educational" rows="4" required></textarea> <br>
+</fieldset>
+
+<fieldset>
+    <legend>Experience</legend>
+    <label for="experience">Experience</label>
+    <textarea id="experience" name="experience" rows="4" required></textarea> <br>
+</fieldset>
+
+<fieldset>
+    <legend>Skills</legend>
+    <label for="skills">Skills</label>
+    <textarea id="skills" name="skills" rows="4" required></textarea> <br>
+</fieldset>
+
+<button type="submit"> Generate Resume </button>
+    </form>
+    <div id="resumeOutput">
+        <!--Resume will be generated below-->
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
